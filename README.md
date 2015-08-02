@@ -40,11 +40,11 @@ Write acceptance tests for your calculator application using the same acceptance
 To complete this assignment, you need to:
 
 1. Fork this repository
-2. Clone your fork onto your machine with `git clone https://github.com/<username>/calculator`
+2. Clone your fork onto your machine with `git clone https://github.com/YOUR_USERNAME/calculator`
 3. Write code
 4. Push your work to your forked repository with `git push`
 5. Submit a pull request to your branch on this repository
 
 ## Questions or Concerns
 
-Leave us a GitHub issue, email your instructor, or grab one before/after the next class.
+Leave us a GitHub issue, email an instructor, or grab one before/after the next class.
