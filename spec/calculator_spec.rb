@@ -33,4 +33,21 @@ describe Calculator do
 		end
 	end
 	
+	describe 'multiply' do
+		it 'does not care what order numbers are multiplied' do
+			calc = Calculator.new
+			expect(calc.multiply(5,9)).to eq 45
+			expect(calc.multiply(9,5)).to eq 45
+		end
+		
+		it 'multiplies by 1 and returns the first number' do
+			calc = Calculator.new
+			expect(calc.multiply(5,1)).to eq 5
+		end
+		
+		it 'multiplies by 0 and returns 0' do
+			calc = Calculator.new
+			expect(calc.multiply(5,0)).to eq 0
+		end
+	end
 end
