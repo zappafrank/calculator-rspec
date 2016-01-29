@@ -50,4 +50,27 @@ describe Calculator do
 			expect(calc.multiply(5,0)).to eq 0
 		end
 	end
+	
+	describe 'divide' do
+		it 'does matter what order numbers are divided' do
+			calc = Calculator.new
+			expect(calc.divide(10,2)).to eq 5
+			expect(calc.divide(2.0,10.0)).to eq 0.2
+		end
+		
+		it 'returns the first integer when dividing by 1' do
+			calc = Calculator.new
+			expect(calc.divide(10,1)).to eq 10
+		end
+		
+		it 'returns 0 when dividing 0 by anything' do
+			calc = Calculator.new
+			expect(calc.divide(0,2)).to eq 0
+		end
+		
+		it 'throws an error when dividing by 0' do
+			calc = Calculator.new
+			expect{calc.divide(1,0)}.to raise_error(ZeroDivisionError)
+		end
+	end
 end
